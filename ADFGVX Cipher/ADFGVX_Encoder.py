@@ -3,16 +3,23 @@ from re import sub
 	A python script for encrypting a message base on the German's ADFGVX encryption
 	used in World War I
 
-	This version has reduced code clarity, so if you're wanting to read the code clearly,
-	without much problems, you're reading the wrong version...unless you have no problem
-	reading long lambda functions and list comprehensions, then you can carry on reading
-	the code below :P
+	This version has reduced code clarity, but has a better algorithm so if you want to 
+	read the code clearly, without much problems, you're reading the wrong version...
+	unless you have no problem reading long lambda functions, list comprehensions, 
+	and dictionary comprehension: then you can carry on reading the code below :P
 	
 	However since I've commented the code to describe it, the clarity should still
 	be there even if you can't understand much of the code
 	
 	Artefact #1 for Term 2 Socials 11
 	- Simon Jinaphant
+	
+	Version 2 - Jan 30 2013
+	-----------------------
+		- removed unnecessary iterations in part 1
+		
+		- better algorithm for part 2, no more unnecessary iteration for searching
+		  since there is a pattern in finding the next letter in the cipher	
 '''
 
 base = "ADFGVX"			#For the letter lookup
@@ -46,53 +53,44 @@ def cipher_message(message):
 			
 			Note: The [0] is for extracting the tuple within the list, it's just a fancy 
 			way of returning a single tuple only using list comprehension
-
-		@lambda extract
-			Returns an list of the individual alphanumeric characters within the message
 	'''
 	cipher = lambda char: [(base[left_index],base[top_index]) 
 							for left_index, row in enumerate(key_square)
 		 					for top_index, letter in enumerate(row) if letter == char][0]
 
-	extract = lambda: [letter for word in message.lower().split() 
-							for letter in sub(r'[^\w\s]','',word)]
-	
-	ciphered_raw = []
-	
-	for char in extract() :
-		ciphered_raw.extend(cipher(char))
+	ciphered_raw = [letter for char in sub(r'[^\w\s]','',message.lower()) 
+							for letter in cipher(char)]
 		
 	return columnar_transposition(ciphered_raw)
 			
 			
-
-def columnar_transposition(ciphered_letters):
+def columnar_transposition(ciphered):
 	'''
 		Performs a column transposition on the ciphered letters and returns the message
 		
 		This is part 2 of the ADFGVX encryption. 
-		
+
 		1. Start by grouping the individual ciphered letters according to the key_word
 		
+		Since there is a pattern in the letters to be grouped per each key, we can simplify
+		this to a dictionary comprehension, with a list comprehension for all the values.
+		
+		The value for each key can be found by taking the first letter at the index 
+		corresponding to @count and stepping by the length of the @key_word
+	'''
+	
+	new_table = {key_letter:[ciphered[i] for i in xrange(count, len(ciphered), len(key_word))]
+							for count, key_letter in enumerate(key_word)}
+	
+	'''
 		2. Perform an alphabetical sorting on the group, using the key of the group
 			(which is the one of the base_word's letter), as the sorting key.
 		
 		3. Copy the letters in each group and concatenate it with the letters 
-			from the other group, resulting in the complete encrypted message, and return 
-			back to the cipher_message() function
-		
+			from the other group, resulting in the complete encrypted message
 	'''
-	new_table = {}
-	final_message = []
 	
-	for count, key_letter in enumerate(key_word):
-		new_table[key_letter] = [cipher_v for cipher_k, cipher_v in enumerate(ciphered_letters) 
-									if cipher_k % len(key_word) == count]
-	
-	for ciphered_key, ciphered_value in sorted(new_table.iteritems(), key = lambda k1: k1[0]):
-		final_message.extend(ciphered_value)
-				
-	return "".join(final_message)
+	return "".join(["".join(v) for _k, v in sorted(new_table.iteritems(), key = lambda k1: k1[0])])
 	
 
-print cipher_message(raw_input("Enter a message:"))
+print cipher_message(raw_input("Enter a message: "))
