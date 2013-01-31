@@ -14,12 +14,7 @@ from re import sub
 	Artefact #1 for Term 2 Socials 11
 	- Simon Jinaphant
 	
-	Version 2 - Jan 30 2013
-	-----------------------
-		- removed unnecessary iterations in part 1
-		
-		- better algorithm for part 2, no more unnecessary iteration for searching
-		  since there is a pattern in finding the next letter in the cipher	
+	Version 2.01
 '''
 
 base = "ADFGVX"			#For the letter lookup
@@ -58,7 +53,7 @@ def cipher_message(message):
 							for left_index, row in enumerate(key_square)
 		 					for top_index, letter in enumerate(row) if letter == char][0]
 
-	ciphered_raw = [letter for char in sub(r'[^\w\s]','',message.lower()) 
+	ciphered_raw = [letter for char in sub(r'[^\w]','',message.lower()) 
 							for letter in cipher(char)]
 		
 	return columnar_transposition(ciphered_raw)
@@ -79,8 +74,8 @@ def columnar_transposition(ciphered):
 		corresponding to @count and stepping by the length of the @key_word
 	'''
 	
-	new_table = {key_letter:[ciphered[i] for i in xrange(count, len(ciphered), len(key_word))]
-							for count, key_letter in enumerate(key_word)}
+	new_table = {key_letter:ciphered[count::len(key_word)] 
+						for count, key_letter in enumerate(key_word)}
 	
 	'''
 		2. Perform an alphabetical sorting on the group, using the key of the group
