@@ -37,10 +37,9 @@ def reverse_transposition(message):
 						or less than the others if the ciphered message has an unequal 
 						length when compared the key_word
 		'''
-		min_capacity = len(message)/len(key_word)
-		extra = len(message)%len(key_word)
+		capacity = divmod(len(message),len(key_word))
 	
-		return min_capacity if key_word.index(key_letter) >= extra else min_capacity+1
+		return capacity[0] if key_word.index(key_letter) >= capacity[1] else capacity[0]+1
 	
 	'''
 		Step 1.	Organize the table to contain each letter of the ciphered message when 
@@ -52,8 +51,7 @@ def reverse_transposition(message):
 	
 	for key, letter in sorted(sorted_table.iteritems(),key=lambda k:k[0]):
 		end_index = get_capacity(key)
-		for letter in message[start_index:start_index+end_index]:
-			sorted_table[key].append(letter)
+		sorted_table[key].extend(message[start_index:start_index+end_index])
 		start_index += end_index
 	
 	'''
@@ -69,6 +67,7 @@ def reverse_transposition(message):
 		There will be an index-out-of-bounds exception thrown when some keys have
 		more or less elements in them, so we can't simplify this to a list comprehension
 	'''
+
 	final_form = []
 									
 	for x, _x in enumerate(max(raw_form, key=len)):
@@ -77,7 +76,7 @@ def reverse_transposition(message):
 				final_form.append(raw_form[y][x])
 			except:
 				continue
-
+				
 	search_square(final_form)
 	
 	
