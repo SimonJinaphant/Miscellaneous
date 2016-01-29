@@ -1,7 +1,15 @@
-def substring(text, pattern):
+'''
+    Determines if a pattern exist within a given text
+    
+'''
+def substring(text, pattern):    
+
+    #Internal implementation: Boyer Moore algorithm
     N = len(text)
     M = len(pattern)
-    skip = 0
+    
+    if M > N:
+        return False        #Optimization for impossible cases 
 
     #Build skip table
     skiptable = {}
@@ -10,7 +18,9 @@ def substring(text, pattern):
             skiptable[letter] = i
         else:
             skiptable[letter] = i
+    
 
+    skip = 0
     i = 0
     while i <= N-M:
         skip = 0
