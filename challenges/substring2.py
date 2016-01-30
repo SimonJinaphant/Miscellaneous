@@ -1,8 +1,4 @@
-prime = 3
-
-def myord(s):
-    #Purely for ease in computation and manual testing, use normal ord instead
-    return ord(s)-ord('a')+1
+prime = 101
 
 '''
     Returns the first index of pattern inside the text
@@ -33,7 +29,7 @@ def substring(text, pattern):
 def computeHash(text):
     hash = 0
     for i, character in enumerate(text):
-        hash += myord(character) * (prime**i)
+        hash += ord(character) * (prime**i)
 
     return hash
 
@@ -43,9 +39,9 @@ def computeHash(text):
     of the original hash all over again
 '''
 def recomputeHash(subtext, oldIndex, newIndex, oldHash, patternLength):
-    oldHash -= myord(subtext[oldIndex])
+    oldHash -= ord(subtext[oldIndex])
     oldHash /= prime    
-    newHash = oldHash + myord(subtext[newIndex]) * (prime**(patternLength-1))
+    newHash = oldHash + ord(subtext[newIndex]) * (prime**(patternLength-1))
 
     return newHash
 
