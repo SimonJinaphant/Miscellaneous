@@ -16,18 +16,16 @@ def substring(text, pattern):
     for i, letter in enumerate(pattern):
         if letter not in skiptable:
             skiptable[letter] = i
-        else:
-            skiptable[letter] = i
     
-
     skip = 0
     i = 0
+    
     while i <= N-M:
         skip = 0
         for j, patternLetter in reversed(list(enumerate(pattern))):
             if patternLetter != text[i+j]:
                 if text[i+j] not in skiptable:
-                    skip = 1
+                    skip = max(1,j+1)
                 else:
                     skip = max(1, j - skiptable[text[i+j]])
                 break
