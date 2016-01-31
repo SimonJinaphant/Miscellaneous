@@ -1,6 +1,5 @@
 '''
-    Determines if a pattern exist within a given text
-    
+    Determines if a pattern exist within a given text    
 '''
 def substring(text, pattern):    
 
@@ -31,13 +30,13 @@ def substring(text, pattern):
                 break
 
         if skip == 0:
-            return True
+            return i+j
 
         i += skip
     
-    return False
+    return -1
 
-
+print substring("abedabc","abc")
 print substring("carpet", "car")
 print substring("aneedleinahaystack","needle")
 print substring("java", "ada")
