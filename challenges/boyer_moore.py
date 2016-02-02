@@ -3,7 +3,6 @@
     Returns -1 if no pattern was found 
 '''
 def substring(text, pattern):    
-
     #Internal implementation: Boyer Moore algorithm
     N = len(text)
     M = len(pattern)
@@ -21,7 +20,7 @@ def substring(text, pattern):
     skip = 0
     i = 0
     
-    while i <= N-M:
+    while i <= N - M:
         skip = 0
         for j, patternLetter in reversed(list(enumerate(pattern))):
             if patternLetter != text[i+j]:

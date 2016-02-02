@@ -21,7 +21,7 @@ def substring(text, pattern):
         subtextHash = recomputeHash(text, i, i+m, subtextHash, m)
     
     #Still need to check the last recomputed hash
-    return n-m if (patternHash == subtextHash and pattern == text[n-m:]) else -1
+    return n - m if (patternHash == subtextHash and pattern == text[n-m:]) else -1
 
 '''
     Compute a hash for the given string
