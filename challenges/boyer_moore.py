@@ -1,22 +1,20 @@
-'''
-    Determines the first index where the pattern occurs in a given text
-    Returns -1 if no pattern was found 
-'''
-def substring(text, pattern):    
-    #Internal implementation: Boyer Moore algorithm
+def substring(text, pattern):
+    """Determines the first index where the pattern occurs in a given text
+
+    :param text: The text to query
+    :param pattern: The pattern to match in text
+    :return: The first index where the pattern matched, otherwise -1 if no pattern was found
+    """
+
     N = len(text)
     M = len(pattern)
     
     if M > N:
-        return False        #Optimization for impossible cases 
+        return False
 
     #Build skip table
-    skiptable = {}
-    for i, letter in enumerate(pattern):
-        if letter not in skiptable:
-            skiptable[letter] = i
-    
-    #Start the actual algorithm
+    skiptable = {letter: i for i, letter in enumerate(pattern)}
+
     skip = 0
     i = 0
     
