@@ -5,7 +5,9 @@ class Node:
 
     def __init__(self, value=None):
         """Constructs a binary tree node
-        :return: A node which can hold a value and has two pointers to its left and right child/subtree
+
+        :return: A node which can hold a value and has two pointers
+         to its left and right child/subtree
         """
         self.value = value
         self.left = 0
@@ -40,12 +42,11 @@ class Node:
         if len(preorder) == 0 or len(inorder) == 0:
             return None
 
-        root = Node()
-        root.value = preorder[0]
-        root_index = self.index_lookup[root.value]
+        assert len(preorder) == len(inorder), \
+            "Require traversal list to be of same size"
 
-        #print "Preorder: {0}, Inorder: {1}".format
-        #print "Root value: {0}, Index in inorder: {1}".format(root.value,root_index)
+        root = Node(preorder[0])
+        root_index = self.index_lookup[root.value]
 
         root.left = self._deserialize(preorder[1:root_index+1], inorder[:root_index])
         root.right = self._deserialize(preorder[root_index+1:], inorder[root_index+1:])
