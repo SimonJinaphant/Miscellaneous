@@ -3,8 +3,11 @@ from Queue import Queue
 
 class Node:
 
-    def __init__(self):
-        self.value = 0
+    def __init__(self, value=None):
+        """Constructs a binary tree node
+        :return: A node which can hold a value and has two pointers to its left and right child/subtree
+        """
+        self.value = value
         self.left = 0
         self.right = 0
         self.index_lookup = None
@@ -27,7 +30,7 @@ class Node:
         self.index_lookup = self.preprocess_inorder(inorder)
         return self._deserialize(preorder, inorder)
 
-    def _deserialize(self, preorder, inorder)
+    def _deserialize(self, preorder, inorder):
         """Inner recursive implementation of the deserialization
 
         :param preorder: pre-order traversal list
