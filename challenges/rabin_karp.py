@@ -24,39 +24,34 @@ def substring(text, pattern):
 
         return hashed_text
 
-    def recompute_hash(oldIndex, newIndex, oldHash):
+    def recompute_hash(old_index, new_index, old_hash):
         """
         Updates a hash to its new value without recomputing most
         of the original hash all over again
 
-        :param oldIndex: The index of the first letter in text
-        :param newIndex: The index of the next letter
+        :param old_index: The index of the first letter in text
+        :param new_index: The index of the next letter
         :param oldHash: The previous integer hash
         :return: A new integer hash
         """
-        oldHash -= ord(text[oldIndex])
-        oldHash /= prime
-        newHash = oldHash + ord(text[newIndex]) * (prime**(m-1))
+        old_hash -= ord(text[old_index])
+        old_hash /= prime
+        return old_hash + ord(text[new_index]) * (prime ** (m - 1))
 
-        return newHash
-    
     #Compute the hash for the pattern and the first 3 letters of the text
-    patternHash = compute_hash(pattern)
-    subtextHash = compute_hash(text[:len(pattern)])
+    hashed_pattern = compute_hash(pattern)
+    hashed_subtext = compute_hash(text[:len(pattern)])
 
     for i in xrange(n - m):
-        if patternHash == subtextHash and pattern == text[i:i+m]:
+        if hashed_pattern == hashed_subtext and pattern == text[i:i+m]:
             return i
 
         #The current hash already has majority of the new hash calculation done
         #So only need to make small calcuation
-        subtextHash = recompute_hash(i, i+m, subtextHash)
+        hashed_subtext = recompute_hash(i, i+m, hashed_subtext)
     
     #Still need to check the last recomputed hash
-    return n - m if (patternHash == subtextHash and pattern == text[n-m:]) else -1
-
-
-
+    return n - m if (hashed_pattern == hashed_subtext and pattern == text[n-m:]) else -1
 
 print substring("abedabc", "abc")
 print substring("carpet", "arp")
