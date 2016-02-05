@@ -1,10 +1,14 @@
 prime = 101
 
-'''
-    Returns the first index of pattern inside the text
-    otherwise -1 if the pattern doesn't exist
-'''
+
 def substring(text, pattern):
+    """
+    Determines the first index of the given pattern in text
+
+    :param text: The string to be searched on
+    :param pattern: The string to match
+    :return: The first index of a matched pattern, otherwise -1 if pattern was not found in text
+    """
     n = len(text)
     m = len(pattern)
     
@@ -27,6 +31,12 @@ def substring(text, pattern):
     Compute a hash for the given string
 '''
 def computeHash(text):
+    """
+    Computes an integer hash based on the given
+
+    :param text: The string to be hashed
+    :return: A hash of the given string
+    """
     hash = 0
     for i, character in enumerate(text):
         hash += ord(character) * (prime**i)
@@ -35,10 +45,20 @@ def computeHash(text):
 
 
 '''
-    Update a hash to its new value without having to recompute most
-    of the original hash all over again
+
 '''
 def recomputeHash(subtext, oldIndex, newIndex, oldHash, patternLength):
+    """
+    Updates a hash to its new value without recomputing most
+    of the original hash all over again
+
+    :param subtext: The string which contains the next letter
+    :param oldIndex: The index of the first letter in subtext
+    :param newIndex: The index of the next letter
+    :param oldHash: The previous integer hash
+    :param patternLength: The length of the overall pattern
+    :return: A new integer hash
+    """
     oldHash -= ord(subtext[oldIndex])
     oldHash /= prime    
     newHash = oldHash + ord(subtext[newIndex]) * (prime**(patternLength-1))
