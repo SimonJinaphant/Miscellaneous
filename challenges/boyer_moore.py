@@ -1,9 +1,12 @@
+import unittest
+
+
 def substring(text, pattern):
     """Determines the first index where the pattern occurs in a given text
 
     :param text: The text to query
     :param pattern: The pattern to match in text
-    :return: The first index where the pattern matched, otherwise -1 if no pattern was found
+    :return: The first index where the pattern matched, otherwise None if no pattern was found
     """
 
     N = len(text)
@@ -33,9 +36,20 @@ def substring(text, pattern):
 
         i += skip
     
-    return -1
+    return None
 
-print substring("abedabc","abc")
-print substring("carpet", "car")
-print substring("aneedleinahaystack","needle")
-print substring("java", "ada")
+
+class TestBoyerMoore(unittest.TestCase):
+
+    def test_ends(self):
+        self.assertEqual(substring("abedabc","abc"), 4)
+        self.assertEqual(substring("carpet", "car"), 0)
+
+    def test_normal(self):
+        self.assertEqual(substring("aneedleinahaystack", "needle"), 1)
+
+    def test_absent(self):
+        self.assertEqual(substring("java", "ada"), None)
+
+if __name__ == "__main__":
+    TestBoyerMoore.main()
