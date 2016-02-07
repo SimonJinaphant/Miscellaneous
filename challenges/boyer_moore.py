@@ -52,4 +52,4 @@ class TestBoyerMoore(unittest.TestCase):
         self.assertEqual(substring("java", "ada"), None)
 
 if __name__ == "__main__":
-    TestBoyerMoore.main()
+    unittest.main()
