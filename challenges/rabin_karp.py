@@ -70,4 +70,4 @@ class TestRabinKarp(unittest.TestCase):
         self.assertEqual(substring("java", "ada"), None)
 
 if __name__ == "__main__":
-    TestRabinKarp.main()
+    unittest.main()
