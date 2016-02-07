@@ -25,7 +25,7 @@ def equilibrium_array(numbers):
         if left[k] == right[k]:
             return k
 
-    return -1
+    return None
 
 
 class TestEquilibriumArray(unittest.TestCase):
@@ -36,7 +36,7 @@ class TestEquilibriumArray(unittest.TestCase):
 
     def test_ends(self):
         self.assertEqual(equilibrium_array([99, 0, 66, 32, 1]), 1)
-        self.assertEqual(equilibrium_array([1, 32, 66 ,0, 99]), 3)
+        self.assertEqual(equilibrium_array([1, 32, 66, 0, 99]), 3)
 
         self.assertEqual(equilibrium_array([0, -99, 66, 32, 1]), 0)
         self.assertEqual(equilibrium_array([1, 32, 66, 0, -99]), None)
