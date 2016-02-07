@@ -1,0 +1,17 @@
+def equilibrium_array(numbers):
+    left = [None] * len(numbers)
+    right = [None] * len(numbers)
+
+    left[0] = 0
+    right[-1] = 0
+
+    size = len(numbers)
+    for i in xrange(1, size):
+        left[i] = numbers[i-1] + left[i-1]
+        right[size-i-1] = numbers[size-i] + right[size-i]
+
+    for k in xrange(0, size):
+        if left[k] == right[k]:
+            return k
+
+print equilibrium_array([-7, 1, 5, 2, -4, 3, 0])
