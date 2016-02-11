@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30e78e0a-8d3c-4003-b76e-73d970ece003" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/challenges/max_subarray.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/challenges/max_subarray.py" afterPath="$PROJECT_DIR$/challenges/max_subarray.py" />
     </list>
     <ignored path="Miscellaneous.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,8 +37,8 @@
       <file leaf-file-name="max_subarray.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/challenges/max_subarray.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.103270225">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.59380376">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -137,7 +137,7 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Python.max_subarray">
+  <component name="RunManager" selected="Python tests.Unittests in max_subarray">
     <configuration default="false" name="equilibrium_array" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -192,6 +192,28 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/challenges/max_subarray.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in max_subarray" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/challenges" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Miscellaneous" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/challenges/max_subarray.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -316,16 +338,18 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Python.equilibrium_array" />
       <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in equilibrium_array" />
       <item index="2" class="java.lang.String" itemvalue="Python.max_subarray" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in max_subarray" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.max_subarray" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in equilibrium_array" />
-        <item index="2" class="java.lang.String" itemvalue="Python.equilibrium_array" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in max_subarray" />
+        <item index="1" class="java.lang.String" itemvalue="Python.max_subarray" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in equilibrium_array" />
+        <item index="3" class="java.lang.String" itemvalue="Python.equilibrium_array" />
       </list>
     </recent_temporary>
   </component>
@@ -340,6 +364,13 @@
       <option name="number" value="Default" />
       <updated>1454962718952</updated>
     </task>
+    <task id="LOCAL-00001" summary="Max subarray problem">
+      <created>1455150410264</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1455150410264</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -349,6 +380,9 @@
     <history-entry file="Unittests_in_equilibrium_array - 2016.02.10 at 16h 17m 22s.xml">
       <configuration name="Unittests in equilibrium_array" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_max_subarray - 2016.02.10 at 16h 32m 11s.xml">
+      <configuration name="Unittests in max_subarray" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="398" y="25" width="1400" height="1000" extended-state="0" />
@@ -356,6 +390,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24945612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -384,6 +419,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Max subarray problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Max subarray problem" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -407,8 +446,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/challenges/max_subarray.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.103270225">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.59380376">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>

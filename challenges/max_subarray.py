@@ -1,3 +1,6 @@
+import unittest
+
+
 def max_subarray(numbers):
 
     lookup = [None] * len(numbers)
@@ -9,10 +12,15 @@ def max_subarray(numbers):
         if lookup[i] > lookup[end]:
             end = i
 
-
     start = lookup.index(min(lookup)) + 1
 
     return numbers[start:end+1]
 
-print max_subarray([-2, 1, -3, 4, -1, 2, 1, -5, 4])
-print max_subarray([-2, -3, 4, -1, -2, 1, 5, -3])
+
+class TestMaxSubarray(unittest.TestCase):
+    def test_normal(self):
+        self.assertEquals(max_subarray([-2, 1, -3, 4, -1, 2, 1, -5, 4]), [4, -1, 2, 1])
+        self.assertEquals(max_subarray([-2, -3, 4, -1, -2, 1, 5, -3]), [4, -1, -2, 1, 5])
+
+if __name__ == "__main__":
+    unittest.main()
