@@ -2,7 +2,10 @@ import unittest
 
 
 def max_subarray(numbers):
-
+    """Determine the largest contiguous sub-array which has the largest sum
+    :param numbers: An array of integer numbers
+    :return: An sub-array of numbers which produces the largest sum
+    """
     lookup = [None] * len(numbers)
     lookup[0] = numbers[0]
 
