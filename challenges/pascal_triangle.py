@@ -1,4 +1,8 @@
 def pascal_triangle(n):
+    """Generate a 2D list corresponding to a pascal's triangle of height n
+    :param n: The height of the triangle
+    :return: Pascal's triangle as a 2D list
+    """
     triangle = [[1]]
 
     for height in xrange(1, n):
