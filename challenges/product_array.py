@@ -1,3 +1,6 @@
+import unittest
+
+
 def product_array(numbers):
     """Generate the product array from the given list of integers
 
@@ -19,4 +22,10 @@ def product_array(numbers):
 
     return results
 
-print product_array([2, 1, 3, 4, 1, 2])
+
+class TestProductArray(unittest.TestCase):
+    def test_normal(self):
+        self.assertEquals(product_array([2, 1, 3, 4, 1, 2]), [24, 48, 16, 12, 48, 24])
+
+if __name__ == "__main__":
+    unittest.main
