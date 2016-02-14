@@ -1,4 +1,10 @@
 def product_array(numbers):
+    """Generate the product array from the given list of integers
+
+    :param numbers: The list of integers, where each element is >= 1
+    :return: An list where the i-th element is the product of
+    the entire numbers list excluding the element at index i
+    """
     results = []
     product = 1
     for num in numbers[1:]:
