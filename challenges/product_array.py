@@ -2,11 +2,11 @@ import unittest
 
 
 def product_array(numbers):
-    """Generate the product array from the given list of integers
+    """Given an numerical array, construct a product array
 
-    :param numbers: The list of integers, where each element is >= 1
-    :return: An list where the i-th element is the product of
-    the entire numbers list excluding the element at index i
+    :param numbers: A list of integers where each element >= 1
+    :return: An integer array of the same size where the element at
+    index i is the product of all elements in numbers except numbers[i]
     """
     results = []
     product = 1
@@ -24,6 +24,12 @@ def product_array(numbers):
 
 
 def product_array_no_div(numbers):
+    """Given an numerical array, construct a product array
+
+    :param numbers: A list of integers where each element >= 1
+    :return: An integer array of the same size where the element at
+    index i is the product of all elements in numbers except numbers[i]
+    """
     results = []
     product = 1
 
