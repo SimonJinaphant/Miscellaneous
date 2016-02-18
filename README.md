@@ -1,6 +1,6 @@
 #Misc
 
-A collection of random python files I've written over the past 4 years
-	
+A collection of random python files
+
 ##Python Specifics
-All python files are written for version 2.7.3
+All python files are written for version 2.7+
