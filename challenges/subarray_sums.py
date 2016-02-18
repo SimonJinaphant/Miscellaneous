@@ -21,11 +21,11 @@ def subarray_sums(numbers, sum):
 
 class TestSubarraySums(unittest.TestCase):
     def test_valid(self):
-        self.assertEquals(subarray_sums([1,4,20,3,10,5], 33), [20, 3, 10])
-        self.assertEquals(subarray_sums([1,4,0,0,3,10,5], 7), [4,0,0,3])
+        self.assertEquals(subarray_sums([1, 4, 20, 3, 10, 5], 33), [20, 3, 10])
+        self.assertEquals(subarray_sums([1, 4, 0, 0, 3, 10, 5], 7), [4, 0, 0, 3])
 
     def test_invalid(self):
-        self.assertEquals(subarray_sums([1,4], 0), [])
+        self.assertEquals(subarray_sums([1, 4], 0), [])
 
 if __name__ == "__main__":
     unittest.main()
