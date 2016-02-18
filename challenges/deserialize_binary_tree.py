@@ -10,8 +10,8 @@ class Node:
          to its left and right child/subtree
         """
         self.value = value
-        self.left = 0
-        self.right = 0
+        self.left = None
+        self.right = None
         self.index_lookup = None
 
     def preprocess_inorder(self, inorder):
@@ -82,5 +82,5 @@ class Node:
                 next_level = 0
                 print
 
-tree = Node().deserialize(map(int, "12473"), map(int, "74213"))
+tree = Node().deserialize([1, 2, 4, 7, 3], [7, 4, 2, 1, 3])Consis
 tree.traverse_by_level()
