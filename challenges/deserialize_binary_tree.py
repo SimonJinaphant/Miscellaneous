@@ -82,5 +82,5 @@ class Node:
                 next_level = 0
                 print
 
-tree = Node().deserialize([1, 2, 4, 7, 3], [7, 4, 2, 1, 3])Consis
+tree = Node().deserialize([1, 2, 4, 7, 3], [7, 4, 2, 1, 3])
 tree.traverse_by_level()
