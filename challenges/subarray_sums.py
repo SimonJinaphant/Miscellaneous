@@ -2,6 +2,12 @@ import unittest
 
 
 def subarray_sums(numbers, sum):
+    """Determine the contiguous sub-array which adds up to the given sum
+
+    :param numbers: The array of positive integer numbers which can add up to the sum
+    :param sum: The given sum to add upto
+    :return: The first contiguous sub-array which adds to the given sum
+    """
     lookup = [-1] * len(numbers)
     lookup[0] = numbers[0]
 
