@@ -11,7 +11,7 @@ def generate_bitwise_ones(n):
     return (1 << n) - 1
 
 
-def generate_bitwise_range(upper, lower):
+def generate_bitmask(upper, lower):
     """Generate a binary number with '1's between the bit index range
     Precondition: upper > lower
 
@@ -34,7 +34,7 @@ def set_bits(n, m, upper, lower):
     :return: n with its :upper and :lower bits (both inclusive) matching that of m
     """
 
-    n &= ~generate_bitwise_range(upper, lower)
+    n &= ~generate_bitmask(upper, lower)
     m <<= lower
 
     return n | m
