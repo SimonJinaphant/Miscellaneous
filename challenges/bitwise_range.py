@@ -1,3 +1,6 @@
+import unittest
+
+
 def generate_bitwise_ones(n):
     """Generate a binary number with n amounts of '1's
 
@@ -37,4 +40,11 @@ def set_bits(n, m, upper, lower):
     return n | m
 
 
-print bin(set_bits(0b10000000000, 0b111, 3, 1))
+class BitwiseRangeTest(unittest.TestCase):
+
+    def test_normals(self):
+        self.assertEqual(set_bits(0b10000000000, 0b111, 3, 1), 0b10000001110)
+        self.assertEqual(set_bits(0b10000001000, 0b10101, 6, 2), 0b10001010100)
+
+if __name__ == "__main__":
+    unittest.main()
