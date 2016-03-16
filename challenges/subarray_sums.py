@@ -30,6 +30,24 @@ def subarray_sums(numbers, sum):
     
     return None
 
+def subarray_sums_alternative(numbers, sum):
+    accumulated_sum = numbers[0]
+    start = 0
+
+    for i in xrange(1, len(numbers)):
+
+        accumulated_sum += numbers[i]
+
+        while accumulated_sum > sum and start < i:
+            accumulated_sum -= numbers[start]
+            start += 1
+
+        if accumulated_sum == sum:
+            return numbers[start:i+1]
+
+    return None
+
+
 
 class TestSubarraySums(unittest.TestCase):
     def test_valid(self):
@@ -39,6 +57,14 @@ class TestSubarraySums(unittest.TestCase):
 
     def test_invalid(self):
         self.assertEquals(subarray_sums([1, 4], 0), None)
+
+    def test_valid_alternative(self):
+        self.assertEquals(subarray_sums_alternative([1, 4, 20, 3, 10, 5], 33), [20, 3, 10])
+        self.assertEquals(subarray_sums_alternative([1, 4, 0, 0, 3, 10, 5], 7), [4, 0, 0, 3])
+        self.assertEqual(subarray_sums_alternative([1, 3, 10, 5, 1, 6], 16), [10, 5, 1])
+
+    def test_invalid_alternative(self):
+        self.assertEquals(subarray_sums_alternative([1, 4], 0), None)
 
 if __name__ == "__main__":
     unittest.main()
