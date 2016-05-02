@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30e78e0a-8d3c-4003-b76e-73d970ece003" name="Default" comment="">
+    <list default="true" id="30e78e0a-8d3c-4003-b76e-73d970ece003" name="Default" comment="Implemented deserialize BST">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/challenges/max_subarray.py" afterPath="$PROJECT_DIR$/challenges/max_subarray.py" />
     </list>
     <ignored path="Miscellaneous.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="max_subarray.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/challenges/max_subarray.py">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6712565">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.03516999">
+              <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -50,12 +49,22 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/challenges/max_subarray.py" />
+        <option value="$PROJECT_DIR$/challenges/pascal_triangle.py" />
+        <option value="$PROJECT_DIR$/challenges/product_array.py" />
+        <option value="$PROJECT_DIR$/challenges/deserialize_binary_search_tree.py" />
+        <option value="$PROJECT_DIR$/challenges/deserialize_binary_tree.py" />
+        <option value="$PROJECT_DIR$/challenges/odd_even_occurrence.py" />
+        <option value="$PROJECT_DIR$/challenges/combination_paren.py" />
+        <option value="$PROJECT_DIR$/challenges/bitwise_range.py" />
+        <option value="$PROJECT_DIR$/challenges/powerset.py" />
+        <option value="$PROJECT_DIR$/challenges/subarray_sums.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="398" />
-    <option name="y" value="25" />
+    <option name="x" value="520" />
+    <option name="y" value="23" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -84,6 +93,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -118,8 +129,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -127,8 +136,8 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in max_subarray">
-    <configuration default="false" name="equilibrium_array" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python tests.Unittests in subarray_sums">
+    <configuration default="false" name="combination_paren" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -140,12 +149,29 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Miscellaneous" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/challenges/equilibrium_array.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/challenges/combination_paren.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests in equilibrium_array" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="bitwise_range" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/challenges" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Miscellaneous" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/challenges/bitwise_range.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in bitwise_range" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -155,7 +181,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Miscellaneous" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/challenges/equilibrium_array.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/challenges/bitwise_range.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -167,7 +193,7 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="max_subarray" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="powerset" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -179,12 +205,12 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Miscellaneous" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/challenges/max_subarray.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/challenges/powerset.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests in max_subarray" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Unittests in subarray_sums" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -194,7 +220,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Miscellaneous" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/challenges/max_subarray.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/challenges/subarray_sums.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -328,18 +354,20 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Python.equilibrium_array" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in equilibrium_array" />
-      <item index="2" class="java.lang.String" itemvalue="Python.max_subarray" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in max_subarray" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.combination_paren" />
+      <item index="1" class="java.lang.String" itemvalue="Python.bitwise_range" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in bitwise_range" />
+      <item index="3" class="java.lang.String" itemvalue="Python.powerset" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in subarray_sums" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in max_subarray" />
-        <item index="1" class="java.lang.String" itemvalue="Python.max_subarray" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in equilibrium_array" />
-        <item index="3" class="java.lang.String" itemvalue="Python.equilibrium_array" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in subarray_sums" />
+        <item index="1" class="java.lang.String" itemvalue="Python.powerset" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in bitwise_range" />
+        <item index="3" class="java.lang.String" itemvalue="Python.bitwise_range" />
+        <item index="4" class="java.lang.String" itemvalue="Python.combination_paren" />
       </list>
     </recent_temporary>
   </component>
@@ -366,34 +394,232 @@
       <option name="project" value="LOCAL" />
       <updated>1455150767518</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added simple documentation">
+      <created>1455150963599</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1455150963599</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added Pascal's Triangle">
+      <created>1455249595705</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1455249595705</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added Pascal's Triangle doc">
+      <created>1455294018732</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1455294018733</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added product array">
+      <created>1455426505911</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1455426505911</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Docs and Specs">
+      <created>1455426658654</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1455426658654</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Never forget those unittests">
+      <created>1455426798993</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1455426798993</updated>
+    </task>
+    <task id="LOCAL-00009" summary="No division implementation">
+      <created>1455512043373</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1455512043373</updated>
+    </task>
+    <task id="LOCAL-00010" summary="No division specs">
+      <created>1455512303216</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1455512303216</updated>
+    </task>
+    <task id="LOCAL-00011" summary="File rename">
+      <created>1455581590907</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1455581590907</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Oops, wrong name">
+      <created>1455581644360</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1455581644360</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Implemented deserialize BST">
+      <created>1455582122505</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1455582122505</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Fixed deserialize BST">
+      <created>1455641465537</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1455641465537</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Consistency update">
+      <created>1455756534294</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1455756534294</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Silly lag mistake">
+      <created>1455756559896</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1455756559896</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Another formatting update">
+      <created>1455756738655</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1455756738655</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Updated README">
+      <created>1455827920552</created>
+      <option name="number" value="00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1455827920552</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Implementation of Odd even occurrence">
+      <created>1456196255852</created>
+      <option name="number" value="00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1456196255852</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Added unittests to oddeven">
+      <created>1456196873496</created>
+      <option name="number" value="00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1456196873496</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Completed formatting of docs">
+      <created>1456282593323</created>
+      <option name="number" value="00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1456282593323</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Updated specs">
+      <created>1456282901048</created>
+      <option name="number" value="00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1456282901048</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Naive implementation of combination parenthesis">
+      <created>1456723983442</created>
+      <option name="number" value="00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1456723983442</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Implemented bitwise range">
+      <created>1457136484180</created>
+      <option name="number" value="00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1457136484180</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Added comments and specs for bitwise range">
+      <created>1457136981798</created>
+      <option name="number" value="00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1457136981798</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Updated bug fix with bitwise range">
+      <created>1457137812947</created>
+      <option name="number" value="00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1457137812947</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Added unit test for bitwise range">
+      <created>1457138026941</created>
+      <option name="number" value="00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1457138026941</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Updated function name">
+      <created>1457138201001</created>
+      <option name="number" value="00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1457138201001</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Forgotten changes">
+      <created>1458104320286</created>
+      <option name="number" value="00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1458104320286</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Fixed bug in subarray_sums for certain test cases">
+      <created>1458106492124</created>
+      <option name="number" value="00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1458106492124</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Included alternative with only one pass through">
+      <created>1458107155419</created>
+      <option name="number" value="00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1458107155419</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Implemented deserialize BST">
+      <created>1458709633805</created>
+      <option name="number" value="00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1458709633805</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_equilibrium_array - 2016.02.08 at 12h 22m 48s.xml">
-      <configuration name="Unittests in equilibrium_array" configurationId="tests" />
+    <history-entry file="Unittests_in_subarray_sums - 2016.03.15 at 22h 24m 59s.xml">
+      <configuration name="Unittests in subarray_sums" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_equilibrium_array - 2016.02.10 at 16h 17m 22s.xml">
-      <configuration name="Unittests in equilibrium_array" configurationId="tests" />
+    <history-entry file="Unittests_in_subarray_sums - 2016.03.15 at 22h 25m 25s.xml">
+      <configuration name="Unittests in subarray_sums" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_max_subarray - 2016.02.10 at 16h 32m 11s.xml">
-      <configuration name="Unittests in max_subarray" configurationId="tests" />
+    <history-entry file="Unittests_in_subarray_sums - 2016.03.15 at 22h 29m 08s.xml">
+      <configuration name="Unittests in subarray_sums" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_max_subarray - 2016.02.10 at 16h 35m 41s.xml">
-      <configuration name="Unittests in max_subarray" configurationId="tests" />
+    <history-entry file="Unittests_in_subarray_sums - 2016.03.15 at 22h 30m 16s.xml">
+      <configuration name="Unittests in subarray_sums" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_subarray_sums - 2016.03.15 at 22h 32m 32s.xml">
+      <configuration name="Unittests in subarray_sums" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_subarray_sums - 2016.03.15 at 22h 33m 08s.xml">
+      <configuration name="Unittests in subarray_sums" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_subarray_sums - 2016.03.15 at 22h 33m 21s.xml">
+      <configuration name="Unittests in subarray_sums" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_subarray_sums - 2016.03.15 at 22h 33m 49s.xml">
+      <configuration name="Unittests in subarray_sums" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_subarray_sums - 2016.03.15 at 22h 45m 17s.xml">
+      <configuration name="Unittests in subarray_sums" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_subarray_sums - 2016.03.15 at 22h 45m 33s.xml">
+      <configuration name="Unittests in subarray_sums" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="398" y="25" width="1400" height="1000" extended-state="0" />
+    <frame x="520" y="23" width="1400" height="1000" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24945612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1791153" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -419,16 +645,39 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Max subarray problem" />
-    <MESSAGE value="Added some basic unittest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added some basic unittest" />
+    <MESSAGE value="Docs and Specs" />
+    <MESSAGE value="Never forget those unittests" />
+    <MESSAGE value="No division implementation" />
+    <MESSAGE value="No division specs" />
+    <MESSAGE value="File rename" />
+    <MESSAGE value="Oops, wrong name" />
+    <MESSAGE value="Fixed deserialize BST" />
+    <MESSAGE value="Consistency update" />
+    <MESSAGE value="Silly lag mistake" />
+    <MESSAGE value="Another formatting update" />
+    <MESSAGE value="Updated README" />
+    <MESSAGE value="Implementation of Odd even occurrence" />
+    <MESSAGE value="Added unittests to oddeven" />
+    <MESSAGE value="Completed formatting of docs" />
+    <MESSAGE value="Updated specs" />
+    <MESSAGE value="Naive implementation of combination parenthesis" />
+    <MESSAGE value="Implemented bitwise range" />
+    <MESSAGE value="Added comments and specs for bitwise range" />
+    <MESSAGE value="Updated bug fix with bitwise range" />
+    <MESSAGE value="Added unit test for bitwise range" />
+    <MESSAGE value="Updated function name" />
+    <MESSAGE value="Forgotten changes" />
+    <MESSAGE value="Fixed bug in subarray_sums for certain test cases" />
+    <MESSAGE value="Included alternative with only one pass through" />
+    <MESSAGE value="Implemented deserialize BST" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented deserialize BST" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/challenges/equilibrium_array.py">
+    <entry file="file://$PROJECT_DIR$/challenges/bitwise_range.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -436,18 +685,219 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/challenges/equilibrium_array.py">
+    <entry file="file://$PROJECT_DIR$/challenges/bitwise_range.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/challenges/odd_even_occurrence.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/challenges/combination_paren.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/challenges/odd_even_occurrence.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/challenges/subarray_sums.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/challenges/subarray_sums.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/challenges/subarray_sums.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/challenges/deserialize_binary_search_tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/challenges/product_array.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/challenges/deserialize_binary_search_tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/challenges/pascal_triangle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/challenges/product_array.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/challenges/pascal_triangle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/challenges/max_subarray.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/challenges/equilibrium_array.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/challenges/equilibrium_array.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/challenges/max_subarray.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/challenges/rabin_karp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/challenges/deserialize_binary_tree.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6712565">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/challenges/pascal_triangle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.59380376">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/challenges/deserialize_binary_search_tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8192771">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/challenges/product_array.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/challenges/odd_even_occurrence.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/challenges/combination_paren.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/challenges/boyer_moore.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/challenges/subarray_sums.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2857143">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/challenges/bitwise_range.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6802721">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03516999">
+          <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
           <folding />
         </state>
       </provider>
